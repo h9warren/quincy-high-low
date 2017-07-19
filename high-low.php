@@ -1,7 +1,11 @@
 <?php
 
+//get number of arguments
+
+//if it equals 2, set min ($a) and max ($b) of mt_rand expression
+
 //Get a random number
-$rando = mt_rand(1,100);
+$rando = mt_rand($a,$b);
 echo "$rando\n";
 //Prompt to guess a number
 fwrite(STDOUT, 'Hey sucker. Guess a number! ');
