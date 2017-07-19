@@ -12,14 +12,12 @@ while ($number != $rando) {
 
   if (is_numeric($number) == false) {
     fwrite(STDOUT, "You must enter a number!\n");
-    $number = trim(fgets(STDIN));
   } else if ($number < $rando) {
     fwrite(STDOUT, "Higher!\n");
-    $number = trim(fgets(STDIN));
   } else if ($number > $rando) {
     fwrite(STDOUT, "Lower!\n");
-    $number = trim(fgets(STDIN));
   }
+    $number = trim(fgets(STDIN));
 }
 
 if($number == $rando) {
